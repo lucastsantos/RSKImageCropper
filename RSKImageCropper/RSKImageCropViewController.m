@@ -611,6 +611,12 @@ static const CGFloat kLayoutImageScrollViewAnimationDuration = 0.25;
     self.imageScrollView.zoomScale = zoomScale;
 }
 
+// Added by https://github.com/Arvkon
+- (void)setMinOutputSize:(CGSize)minSize
+{
+    self.imageScrollView.minOutputSize = minSize;
+}
+
 #pragma mark - Action handling
 
 - (void)onCancelButtonTouch:(UIBarButtonItem *)sender
